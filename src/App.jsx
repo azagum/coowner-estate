@@ -98,6 +98,56 @@ export default function App() {
 
   </div>
 </section>
+{/* ABOUT ME – TOP PERSONAL BLOCK */}
+<section className="section about-me-section">
+  <h2>{lang === "en" ? "Who is behind this project" : "Хто стоїть за цим проєктом"}</h2>
+
+  <div className="about-me-grid">
+    
+    {/* LEFT PHOTO */}
+    <div className="about-me-photo">
+      <img src="/hero/me-plane.jpg" alt="Oleksii near aircraft" />
+    </div>
+
+    {/* RIGHT PHOTO */}
+    <div className="about-me-photo">
+      <img src="/hero/me-travel.jpg" alt="Oleksii traveling" />
+    </div>
+
+    {/* TEXT BLOCK */}
+    <div className="about-me-text">
+      {lang === "en" ? (
+        <>
+          <p>
+            My name is Oleksii, and before mobilization I worked in aviation — a stable, well-paid profession that allowed me to travel the world and invest in my future. 
+            I made the initial payment for the apartment fully with my own savings.
+          </p>
+          <p>
+            After joining the Ukrainian Armed Forces, my income dropped drastically, but my obligations did not disappear. 
+            Instead of giving up, I decided to build a transparent, modern model of support inspired by global RWA (real-world asset) standards.
+          </p>
+          <p>
+            This project is not charity — it is dignity, responsibility, and a real home to return to after service.
+          </p>
+        </>
+      ) : (
+        <>
+          <p>
+            Мене звати Олексій. До мобілізації я працював в авіації — стабільна та добре оплачувана професія, що дозволяла подорожувати світом та інвестувати у майбутнє. 
+            Перший внесок за квартиру я зробив повністю з власних заощаджень.
+          </p>
+          <p>
+            Після мобілізації дохід різко впав, але фінансові зобов’язання залишилися. 
+            Замість того, щоб відмовитися від квартири, я вирішив створити прозору й сучасну модель підтримки, натхненну глобальними RWA-проєктами.
+          </p>
+          <p>
+            Цей проєкт — не про благодійність. Це про гідність, відповідальність та реальний дім, куди можна повернутися після служби.
+          </p>
+        </>
+      )}
+    </div>
+  </div>
+</section>
 
       {/* ABOUT */}
       <section id="about" className="section">
@@ -889,10 +939,11 @@ legalProofNote:
 
     /* WHO I AM */
     whoTitle: "Who I am",
-    whoText1:
-      "My identity is open, but unit details remain private for security reasons.",
-    whoText2:
-      "This campaign is about dignity and stability — not pity.",
+whoText1:
+  "Before mobilization, I worked in aviation — a demanding and well-paid profession that allowed me to travel the world and build a stable life through hard work. Buying an apartment in Kyiv was a responsible and thoughtful decision I made long before the war escalated, and I invested over $21,000 of my own savings into it.",
+whoText2:
+  "After being mobilized, my income dropped drastically, and continuing the payments became difficult. Yet this apartment remains a real commitment — something I began myself and want to complete with dignity. This project isn't about pity; it’s about transparency, responsibility, and a soldier trying to finish what he started before the war.",
+
 
     ctaTitle: "Be part of something real.",
     ctaText: "Your support helps complete a real home in Kyiv and strengthens a transparent soldier-led initiative. Every contribution brings this mission closer to reality.",
@@ -1032,10 +1083,11 @@ legalProofNote:
   "Повні документи не можуть бути опубліковані відкрито з міркувань безпеки, але надаються приватно за запитом.",
 
     whoTitle: "Хто я",
-    whoText1:
-      "Мою особу можна перевірити, але деталі служби не публікую.",
-    whoText2:
-      "Це проєкт про гідність і стабільність.",
+whoText1:
+  "До мобілізації я працював в авіації — це складна та добре оплачувана професія, яка дозволила мені багато мандрувати та будувати стабільне життя власними силами. Рішення купити квартиру в Києві було відповідальним і продуманим, і я вклав у неї понад $21 000 власних коштів.",
+whoText2:
+  "Після мобілізації мій дохід різко впав, і продовжувати оплату стало складно. Але ця квартира — реальне зобов’язання, яке я розпочав сам і хочу завершити з гідністю. Цей проєкт не про жалість — це про прозорість, відповідальність і про військового, який намагається завершити те, що почав до війни.",
+
 
     ctaTitle: "Станьте частиною реальної справи.",
     ctaText: "Ваша підтримка допомагає завершити оплату за реальну квартиру в Києві та зміцнює прозору ініціативу, яку веде військовий. Кожен внесок наближає цю місію до реальності.",
