@@ -49,40 +49,27 @@ export default function App() {
       </div>
 
       {/* HERO */}
-      <header className="hero">
-        <div className="hero-content">
-          <h1>{t.heroTitle}</h1>
-          <p>{t.heroSubtitle}</p>
+      <header className="hero-new">
+  <div className="hero-overlay"></div>
 
-          <div className="hero-buttons">
-            <a href="#payments" className="btn primary">
-              {t.btnContribute}
-            </a>
-            <a href="#about" className="btn secondary">
-              {t.btnLearnMore}
-            </a>
-          </div>
-<div className="hero-trust">
-  No investment. No promises. Full transparency.
-</div>
+  <div className="hero-content fade-in">
+    <span className="badge">
+      {lang === "en" ? "RWA Pilot Project" : "Пілотний RWA-проєкт"}
+    </span>
 
-          <div className="progress-card">
-            <div className="progress-header">
-              <span>{t.progressTitle}</span>
-              <span>
-                {t.raised}: ${RAISED.toLocaleString()} / ${GOAL.toLocaleString()}
-              </span>
-            </div>
-            <div className="progress-bar">
-              <div className="progress-fill" style={{ width: `${PERCENT}%` }} />
-            </div>
-            <div className="progress-footer">
-              <span>{PERCENT}%</span>
-              <span>{t.progressNote}</span>
-            </div>
-          </div>
-        </div>
-      </header>
+    <h1>{t.heroTitle}</h1>
+    <p className="hero-sub">{t.heroSubtitle}</p>
+
+    <div className="hero-buttons">
+      <a href="#payments" className="btn primary big">
+        {t.btnContribute}
+      </a>
+      <a href="#about" className="btn secondary big">
+        {t.btnLearnMore}
+      </a>
+    </div>
+  </div>
+</header>
 
       {/* ABOUT */}
       <section id="about" className="section">
