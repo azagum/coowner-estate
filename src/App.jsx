@@ -71,6 +71,34 @@ export default function App() {
   </div>
 </header>
 
+{/* PROGRESS CARD - NEW DESIGN */}
+<section className="progress-section">
+  <div className="progress-card-new">
+    
+    <div className="progress-amounts">
+      <div className="raised">
+        ${RAISED.toLocaleString()}
+      </div>
+      <div className="goal">
+        {lang === "en" ? "raised of" : "зібрано з"} ${GOAL.toLocaleString()}
+      </div>
+    </div>
+
+    <div className="progress-bar-new">
+      <div 
+        className="progress-fill-new" 
+        style={{ width: `${PERCENT}%` }} 
+      ></div>
+    </div>
+
+    <div className="progress-bottom">
+      <div className="percent">{PERCENT}%</div>
+      <div className="note">{t.progressNote}</div>
+    </div>
+
+  </div>
+</section>
+
       {/* ABOUT */}
       <section id="about" className="section">
         <h2>{t.aboutTitle}</h2>
