@@ -114,34 +114,82 @@ export default function App() {
       </section>
 
       {/* ABOUT THE APARTMENT */}
-      <section className="section">
+      <section className="section section-muted">
 
         <h2>{t.apartmentTitle}</h2>
-        <p>{t.apartmentSubtitle}</p>
+<p className="apt-sub">{t.apartmentSubtitle}</p>
 
-        <div className="apt-grid">
-          <div className="apt-card">
-            <div className="apt-label">{t.aptPriceLabel}</div>
-            <div className="apt-value">$80,000</div>
-          </div>
+<div className="property-grid">
 
-          <div className="apt-card">
-            <div className="apt-label">{t.aptLocationLabel}</div>
-            <div className="apt-value">{t.aptLocation}</div>
-          </div>
+  {/* PRICE */}
+  <div className="property-card fade-in">
+    <div className="icon-wrap">
+      <svg
+        className="prop-icon"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+        <circle cx="12" cy="12" r="10" />
+        <path d="M9 9h4a2 2 0 0 1 0 4h-2.5M11 7v10" />
+      </svg>
+    </div>
+    <h3>{t.aptPriceLabel}</h3>
+    <p className="value">$80,000</p>
+  </div>
 
-          <div className="apt-card">
-            <div className="apt-label">{t.aptAreaLabel}</div>
-            <div className="apt-value">{t.aptArea}</div>
-          </div>
+  {/* LOCATION */}
+  <div className="property-card fade-in">
+    <div className="icon-wrap">
+      <svg
+        className="prop-icon"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+        <path d="M12 22s7-7.1 7-12a7 7 0 0 0-14 0c0 4.9 7 12 7 12Z" />
+        <circle cx="12" cy="10" r="2.5" />
+      </svg>
+    </div>
+    <h3>{t.aptLocationLabel}</h3>
+    <p className="value">{t.aptLocation}</p>
+  </div>
 
-          <div className="apt-card">
-            <div className="apt-label">{t.aptPlanLabel}</div>
-            <div className="apt-value">{t.aptPlan}</div>
-          </div>
-        </div>
+  {/* AREA */}
+  <div className="property-card fade-in">
+    <div className="icon-wrap">
+      <svg
+        className="prop-icon"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+        <rect x="4" y="4" width="16" height="16" rx="2" />
+        <path d="M9 4v16M4 9h16" />
+      </svg>
+    </div>
+    <h3>{t.aptAreaLabel}</h3>
+    <p className="value">{t.aptArea}</p>
+  </div>
 
-        <p className="apt-note">{t.apartmentNote}</p>
+  {/* PLAN / TYPE */}
+  <div className="property-card fade-in">
+    <div className="icon-wrap">
+      <svg
+        className="prop-icon"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+        <rect x="3" y="3" width="18" height="18" rx="2" />
+        <path d="M9 3v8h12M9 13v8M3 9h6" />
+      </svg>
+    </div>
+    <h3>{t.aptPlanLabel}</h3>
+    <p className="value">{t.aptPlan}</p>
+  </div>
+
+</div>
+
+<p className="apt-note">{t.apartmentNote}</p>
+
+
       </section>
 
 {/* APARTMENT GALLERY */}
